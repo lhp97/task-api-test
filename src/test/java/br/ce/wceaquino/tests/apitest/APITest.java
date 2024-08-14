@@ -1,5 +1,7 @@
 package br.ce.wceaquino.tests.apitest;
 
+import java.time.LocalDate;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,7 +31,7 @@ public class APITest {
 		
 		RestAssured
 			.given()
-				.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2024-08-13\" }")
+				.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2024-08-14\" }")
 				.contentType(ContentType.JSON)
 			.when()
 				.post("/todo")
